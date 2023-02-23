@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SGP Charts</title>
+
+		<!-- CSS Styles -->
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<a href="#" class="logo">
+				<h1>Chart JS</h1>
+			</a>
+			<button class="btn">Account</button>
+		</header>
+
+		<main>
+			<section class="first-section">
+				<div class="chart">
+					<div class="chart-header">
+						<div class="chart-title">Doughnut Chart</div>
+						<div class="chart-subtitle">
+							<p>
+								Los gráficos circulares y de anillos son
+								probablemente los gráficos más utilizados. Se
+								dividen en segmentos, el arco de cada segmento
+								muestra el valor proporcional de cada dato.
+							</p>
+							<p>
+								Son excelentes para mostrar las proporciones
+								relacionales entre los datos.
+							</p>
+						</div>
+					</div>
+					<div class="chart-body">
+						<canvas class="chart-canvas" id="chart1"></canvas>
+					</div>
+				</div>
+				<div class="chart">
+					<div class="chart-header">
+						<div class="chart-title">Radar Chart</div>
+						<div class="chart-subtitle">
+							<p>
+								Un gráfico de radar es una forma de mostrar
+								múltiples puntos de datos y la variación entre
+								ellos.
+							</p>
+							<p>
+								A menudo son útiles para comparar los puntos de
+								dos o más conjuntos de datos diferentes.
+							</p>
+						</div>
+					</div>
+					<div class="chart-body">
+						<canvas class="chart-canvas" id="chart2"></canvas>
+					</div>
+				</div>
+			</section>
+
+			<section class="second-section">
+				<div class="chart">
+					<div class="chart-header">
+						<div class="chart-title">Pie Chart</div>
+						<div class="chart-subtitle">
+							<p>
+								Los gráficos circulares y de anillos son
+								probablemente los gráficos más utilizados. Se
+								dividen en segmentos, el arco de cada segmento
+								muestra el valor proporcional de cada dato.
+							</p>
+
+							<p>
+								Son excelentes para mostrar las proporciones
+								relacionales entre los datos.
+							</p>
+						</div>
+					</div>
+					<div class="chart-body">
+						<canvas class="chart-canvas" id="chart3"></canvas>
+					</div>
+				</div>
+				<div class="chart">
+					<div class="chart-header">
+						<div class="chart-title">Polar Area Chart</div>
+						<div class="chart-subtitle">
+							<p>
+								Los gráficos de áreas polares son similares a
+								los gráficos circulares, pero cada segmento
+								tiene el mismo ángulo: el radio del segmento
+								difiere según el valor.
+							</p>
+
+							<p>
+								Este tipo de gráfico suele ser útil cuando
+								queremos mostrar una comparación de datos
+								similar a un gráfico circular, pero también
+								mostrar una escala de valores para el contexto.
+							</p>
+						</div>
+					</div>
+					<div class="chart-body">
+						<canvas class="chart-canvas" id="chart4"></canvas>
+					</div>
+				</div>
+			</section>
+
+			<section class="third-section">
+				<div class="chart">
+					<div class="chart-header">
+						<div class="chart-title">Bar Chart</div>
+						<div class="chart-subtitle">
+							<p>
+								Un gráfico de barras proporciona una forma de
+								mostrar valores de datos representados como
+								barras verticales. A veces se usa para mostrar
+								datos de tendencias y la comparación de
+								múltiples conjuntos de datos uno al lado del
+								otro.
+							</p>
+						</div>
+					</div>
+					<div class="chart-body">
+						<canvas class="chart-canvas" id="chart5"></canvas>
+					</div>
+				</div>
+			</section>
+
+			<section class="fourth-section">
+				<div class="chart">
+					<div class="chart-header">
+						<div class="chart-title">Line Chart</div>
+						<div class="chart-subtitle">
+							<p>
+								Un gráfico de líneas es una forma de trazar
+								puntos de datos en una línea. A menudo, se
+								utiliza para mostrar datos de tendencias o la
+								comparación de dos conjuntos de datos.
+							</p>
+						</div>
+					</div>
+					<div class="chart-body">
+						<canvas class="chart-canvas" id="chart6"></canvas>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.umd.min.js"></script>
+
+		<script src="js/charts/BarChart.js"></script>
+		<script src="js/charts/LineChart.js"></script>
+		<script src="js/charts/DoughnutChart.js"></script>
+		<script src="js/charts/PieChart.js"></script>
+		<script src="js/charts/RadarChart.js"></script>
+		<script src="js/charts/PolarChart.js"></script>
+		<script src="js/helpers.js"></script>
+		<script src="js/handlers.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
